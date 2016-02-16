@@ -1,0 +1,36 @@
+Logic Specs
+
+ability to input a single word              *
+input: word(string), output: word(string)   *
+
+get a list of potential anagrams *
+input: multiple words, output: verify input *
+
+check input against one candidate
+input: candidate, output: boolean are all the letters matching
+
+check input against all other candidates
+input: candidate, output: boolean are all the letters matching
+
+Logic for candidate checking:
+take a candidate list item and put in character array
+take input and put it in a character array
+sort each array alphabetically
+check and count occurances of 1 character from first array, in 2nd array
+check and count remaining characters from 1st array, until first array end of file
+(1 full match)
+(2 partial match > 2 characters in common)
+(# of occurances in checked word IE racecar has two occurances of car)
+return these things:
+return string(s) that specifies full match
+return string(s) that connstitute partial matches
+return # occurances of partial and full matches if greater than 1
+
+
+Interface Specs
+
+webpage form where user can input string for candidate word
+
+pass input into data model
+
+display results from data model on web page (display no matches if no matches)
